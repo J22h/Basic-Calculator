@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.TilePane?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="470.0" prefWidth="374.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.calc.HelloController">
+   <children>
+      <TilePane layoutX="35.0" layoutY="161.0" prefHeight="223.0" prefWidth="210.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#button7" prefHeight="64.0" prefWidth="64.0" text="7" />
+            <Button mnemonicParsing="false" onAction="#button8" prefHeight="64.0" prefWidth="64.0" text="8" />
+            <Button mnemonicParsing="false" onAction="#button9" prefHeight="64.0" prefWidth="64.0" text="9" />
+            <Button mnemonicParsing="false" onAction="#button4" prefHeight="64.0" prefWidth="64.0" text="4" />
+            <Button mnemonicParsing="false" onAction="#button5" prefHeight="64.0" prefWidth="64.0" text="5" />
+            <Button mnemonicParsing="false" onAction="#button6" prefHeight="64.0" prefWidth="64.0" text="6" />
+            <Button mnemonicParsing="false" onAction="#button1" prefHeight="64.0" prefWidth="64.0" text="1" />
+            <Button mnemonicParsing="false" onAction="#button2" prefHeight="64.0" prefWidth="64.0" text="2" />
+            <Button mnemonicParsing="false" onAction="#button3" prefHeight="64.0" prefWidth="64.0" text="3" />
+            <Button mnemonicParsing="false" onAction="#buttonClear" prefHeight="64.0" prefWidth="64.0" text="C" />
+            <Button mnemonicParsing="false" onAction="#button0" prefHeight="64.0" prefWidth="64.0" text="0" />
+            <Button mnemonicParsing="false" onAction="#buttonEquals" prefHeight="64.0" prefWidth="64.0" text="=" />
+         </children>
+      </TilePane>
+      <TextField fx:id="textField" layoutX="35.0" layoutY="33.0" prefHeight="82.0" prefWidth="305.0" />
+      <TilePane layoutX="276.0" layoutY="161.0" prefHeight="240.0" prefWidth="64.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#buttonDivide" prefHeight="64.0" prefWidth="64.0" text="/" />
+            <Button mnemonicParsing="false" onAction="#buttonMultiply" prefHeight="64.0" prefWidth="64.0" text="x" />
+            <Button mnemonicParsing="false" onAction="#buttonSubtract" prefHeight="64.0" prefWidth="64.0" text="-" />
+            <Button mnemonicParsing="false" onAction="#buttonAdd" prefHeight="64.0" prefWidth="64.0" text="+" />
+         </children>
+      </TilePane>
+   </children>
+</AnchorPane>
