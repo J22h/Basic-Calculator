@@ -152,23 +152,11 @@ public class HelloController {
     }
 
     private boolean hasOperand(String currentNumber) {
-        int d = currentNumber.indexOf("/");
-        int m = currentNumber.indexOf("*");
-        int s = currentNumber.indexOf("-");
-        int a = currentNumber.indexOf("+");
-        if(d!= -1){
-            return true;
-        }
-        if(m!= -1){
-            return true;
-        }
-        if(s!= -1){
-            return true;
-        }
-        if(a!= -1){
-            return true;
-        }
-        return false;
+        boolean d = currentNumber.contains("/");
+        boolean m = currentNumber.contains("*");
+        boolean s = currentNumber.contains("-");
+        boolean a = currentNumber.contains("+");
+        return d || m || s || a;
     }
 
 }
